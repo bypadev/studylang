@@ -9,18 +9,20 @@ const Select = dynamic(() => import("react-select"), {
 function Dropdown() {
   const [value, setValue] = useState(null)
   const options = [
-    { value: "San Diego", label: "San Diego" },
-    { value: "Los Angeles", label: "Los Angeles" },
-    { value: "San Francisco", label: "San Francisco" },
+    { value: "CYP", label: "North Cyprus" },
+    { value: "TR", label: "Turkey" },
   ]
   const optionsTwo = [
-    { value: "Offices", label: "Offices" },
-    { value: "Apartment", label: "Apartment" },
-    { value: "Houses", label: "Houses" },
+    { value: "Associate", label: "Associate" },
+    { value: "Bachelor", label: "Bachelor" },
+    { value: "Doctorate", label: "Doctorate" },
+    { value: "Language", label: "Language Course" },
+    { value: "Master", label: "Master" },
+    { value: "Training", label: "Training Course" },
   ]
   const optionsThree = [
-    { value: "Rent", label: "Rent" },
-    { value: "Sell", label: "Sell" },
+    { value: "Architecture", label: "Architecture" },
+    { value: "IT", label: "Information Technologies" },
   ]
   const customSelectStyle = {
     control: (provided) => ({
@@ -59,7 +61,7 @@ function Dropdown() {
                 defaultValue={value}
                 onChange={setValue}
                 isSearchable={true}
-                placeholder="Location"
+                placeholder="Select country"
                 styles={customSelectStyle}
               />
               <i className="fa-solid fa-location-crosshairs search-icon" />
@@ -73,7 +75,7 @@ function Dropdown() {
                 onChange={setValue}
                 isSearchable={true}
                 styles={customSelectStyle}
-                placeholder="Property"
+                placeholder="Select Degree"
               />
               <i className="fa-solid fa-house fs-17 search-icon"></i>
             </div>
@@ -86,7 +88,7 @@ function Dropdown() {
                 onChange={setValue}
                 isSearchable={true}
                 styles={customSelectStyle}
-                placeholder="Rent"
+                placeholder="Area of Study"
               />
               <i className="fa-solid fa-sack-dollar fs-18 search-icon"></i>
 

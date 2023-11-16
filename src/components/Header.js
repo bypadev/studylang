@@ -59,7 +59,7 @@ export default function Header() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-4 col-lg-3 col-xl-4">
-                            <Link href="/" className="headerLogo"><img src="assets/img/logo-white.png" alt="" height="40" /></Link>
+                            <Link href="/" className="headerLogo d-flex column-gap-2 align-items-center"><img src="assets/logo-white-sl.png" alt="" height="40" /> <p className="h4 text-white mt-2">STUDYLANDIA</p></Link>
                         </div>
                         <div className="col-md-8 col-lg-9 col-xl-8 d-none d-md-block">
                             <div className="d-flex justify-content-end">
@@ -113,6 +113,7 @@ export default function Header() {
                                 {/* Start Brand Logo For Mobile */}
                                 <div className="collapse-brand flex-shrink-0">
                                     <Link href="/"><img src="assets/img/logo.png" alt="" /></Link>
+
                                 </div>
                                 {/* End Brand Logo For Mobile */}
                                 {/* Start Collapse Close Button */}
@@ -125,82 +126,16 @@ export default function Header() {
                             </div>
                             {/* End Navbar Collapse Header */}
                             <ul className="navbar-nav">
-                                <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Home
-                                    </Link>
-                                    <ul className="dropdown-menu">
-                                    {
-                                                    links?.slice(0,4).map((link)=>{
-                                                        return(
-                                                            <Link key={`${link.href}${link.text}`} href={link.href} className={`dropdown-item col-6 ${path === link.href ? 'active' : ''}`}>
-                                                                    {link.text}
-                                                            </Link>
-                                                      
-                                                            
-                                                        )
-                                                    })
-                                                  }
-                                    </ul>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="/">Home</Link>
                                 </li>
-                                <li className="nav-item"><Link className="nav-link" href="properties-list" >Properties</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="agent-grid">Agent Finder</Link></li>
-                                <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Pages
-                                    </Link>
-                                    <ul className="dropdown-menu mega-menu">
-                                    
-                                        <li>
-                                            <span className="row">
-                                                <span className="col-6">
-                                                  {
-                                                    links.slice(0,13).map((link)=>{
-                                                        return(
-                                                            <Link  key={`${link.href}${link.text}`}   href={link.href} className={`dropdown-item col-6 ${path === link.href ? 'active' : ''}`}>
-                                                                    {link.text}
-                                                            </Link>
-                                                      
-                                                            
-                                                        )
-                                                    })
-                                                  }
-                                                </span>
-                                                <span className="col-6">
-                                                {
-                                                    links.slice(13,26).map((link)=>{
-                                                        return(
-                                                            <Link key={`${link.href}${link.text}`}    href={link.href} className={`dropdown-item col-6 ${path === link.href ? 'active' : ''}`}>
-                                                                    {link.text}
-                                                            </Link>                  
-                                                        )
-                                                    })
-                                                  }
-                                                </span>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li className="nav-item"><Link className="nav-link" href="properties-list">Advanced search</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="about">About</Link></li>
                                 <li className="nav-item"><Link className="nav-link" href="contact">Contact</Link></li>
                             </ul>
                         </div>
                         {/*  /. End Navbar Collapse */}
                         <div className="d-flex gap-1 ms-lg-5">
-                            {/* Start Cart Button */}
-                            <Link href="/" data-bs-toggle="modal" data-bs-target="#cartEmpty" className="align-items-center btn cart-button d-none d-xl-flex ms-2 ms-lg-0">
-                                <i className="fa-solid fa-cart-shopping"></i>
-                                <span className="ms-2">Cart</span>
-                                <span className="align-items-center cart-quantity d-flex fw-bold justify-content-center ms-2 rounded-circle">0</span>
-                            </Link>
-                            {/* For Mobile */}
-                            <Link href="/" className="btn btn-primary d-none d-sm-inline-block d-xl-none"><i className="fa-solid fa-cart-shopping"></i></Link>
-                            {/*  /. End Cart Button */}
-                            {/* Start Login & Signup Button */}
-                            <Link href="signin" className="btn btn-primary btn-login hstack gap-2">
-                                <i className="fa-solid fa-arrow-right-to-bracket"></i>
-                                <div className="vr d-none d-sm-inline-block"></div>
-                                <span className="d-none d-sm-inline-block">Login / Signup</span>
-                            </Link>
                             {/* /. End Login & Signup Button */}
                             {/*  Start Navbar Toggler Buton */}
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -213,34 +148,6 @@ export default function Header() {
                 {/* /.End of navbar */}
             </div>
             {/* /.End of navbar */}
-            {/* Start Cart Empty Modal */}
-            <div
-                className="modal fade"
-                id="cartEmpty"
-                tabIndex={-1}
-                aria-labelledby="cartEmptyLabel"
-                aria-hidden="true"
-            >
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="cartEmptyLabel">
-                                Your Cart
-                            </h1>
-                            <button
-                                type="button"
-                                className="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            />
-                        </div>
-                        <div className="modal-body">
-                            <p className="py-5 text-center">No items found.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* /.End Cart Empty Modal */}
         </>
     );
 }

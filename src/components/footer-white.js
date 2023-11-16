@@ -22,49 +22,19 @@ export default function FooterWhite() {
                                 <Link className="email-link d-block fw-medium" href="#"><i className="fa-solid fa-envelope me-2"></i><span>support@FindHusly.com</span></Link>
                             </div>
                         </div>
-                        <div className="col-6 col-sm-6 col-md-6 col-lg-auto col-xl-2 py-3 py-md-5">
+                        <div className="col-6 col-sm-6 col-md-6 col-lg-auto col-xl-2 py-3 py-md-5 flex-fill">
                             <h3 className="fs-20 fw-semibold link-title mb-3 position-relative">Main Pages</h3>
                             {/* /Start Footer Link  */}
                             <ul className="footer-link list-unstyled menu mb-0">
-                                <li className="mb-2"><Link href="/" className="link d-block">Home One</Link></li>
-                                <li className="mb-2"><Link href="home-2" className="link d-block">Home Two</Link></li>
-                                <li className="mb-2"><Link href="home-3" className="link d-block">Home Three</Link></li>
-                                <li className="mb-2"><Link href="properties-list" className="link d-block">Properties List</Link></li>
-                                <li className="mb-2"><Link href="properties-grid" className="link d-block">Properties Grid</Link></li>
-                                <li className="mb-2"><Link href="property-details" className="link d-block">Property Details 1</Link></li>
-                                <li className="mb-2"><Link href="property-details-2" className="link d-block">Property Details 2</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
+                                <li className="mb-2"><Link href="/" className="link d-block">Footer Pages Link</Link></li>
                             </ul>
                             {/* /.End Footer Link  */}
-                        </div>
-                        <div className="col-6 col-sm-4 col-md-4 col-lg-auto col-xl-2 py-3 py-md-5">
-                            <h3 className="fs-20 fw-semibold link-title mb-3 position-relative">Template pages</h3>
-                            {/* /Start Footer Link  */}
-                            <ul className="footer-link list-unstyled menu mb-0">
-                                <li className="mb-2"><Link href="agent-list" className="link d-block">Agents List</Link></li>
-                                <li className="mb-2"><Link href="agent-grid" className="link d-block">Agents Grid</Link></li>
-                                <li className="mb-2"><Link href="agent-details" className="link d-block">Agent Details</Link></li>
-                                <li className="mb-2"><Link href="blog-1" className="link d-block">Blog 1</Link></li>
-                                <li className="mb-2"><Link href="blog-2" className="link d-block">Blog 2</Link></li>
-                                <li className="mb-2"><Link href="blog-details" className="link d-block">Blog Details</Link></li>
-                            </ul>
-                            {/* /.End Footer Link  */}
-
-                        </div>
-                        <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 py-3 py-md-5 d-lg-none d-xl-block">
-                            <h3 className="fs-20 fw-semibold link-title mb-3 position-relative">Utility pages</h3>
-                            {/* /Start Footer Link  */}
-
-                            <ul className="footer-link list-unstyled menu mb-0">
-                                <li className="mb-2"><Link href="style-guide" className="link d-block">Style Guide</Link></li>
-                                <li className="mb-2"><Link href="signin" className="link d-block">Sign In</Link></li>
-                                <li className="mb-2"><Link href="signup" className="link d-block">Sign Up</Link></li>
-                                <li className="mb-2"><Link href="forgot-password" className="link d-block">Forgot Password</Link></li>
-                                <li className="mb-2"><Link href="two-factor-auth" className="link d-block">Two factor authentication</Link></li>
-                                <li className="mb-2"><Link href="terms-conditions" className="link d-block">Terms &amp; Conditions</Link></li>
-                                <li className="mb-2"><Link href="not_found" className="link d-block">404 Page</Link></li>
-                                <li className="mb-2"><Link href="505" className="link d-block">505 Page</Link></li>
-                            </ul>
-                            {/* /.End Footer Link */}
                         </div>
                         <div className="col-6 col-sm-4 col-md-4 col-lg col-xl-2 py-3 py-md-5">
                             <h3 className="fs-20 fw-semibold link-title mb-3 position-relative">Connect with us</h3>

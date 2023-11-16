@@ -24,7 +24,7 @@ export default async function Home() {
             <div className="container position-relative z-2">
               <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
-                  <h1 className="hero-header_title fw-bold mb-5 display-2">Find your dream home<br className="d-none d-xxl-block" /> in the best <span className="underline position-relative text-white">location</span></h1>
+                  <h1 className="hero-header_title fw-bold mb-5 display-2">Find your dream University<br className="d-none d-xxl-block" /> in the best <span className="underline position-relative text-white">location</span></h1>
                   {/* Start Main Search Content */}
                   <Dropdown/>
                   {/* <JQueryComponent/> */}

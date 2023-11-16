@@ -25,7 +25,8 @@
     "react-owl-carousel": "^2.3.3",
     "react-scroll-to-top": "^3.0.0",
     "react-select": "^5.7.7",
-    "react-sticky-box": "^2.0.4"
+    "react-sticky-box": "^2.0.4",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "eslint": "^8.51.0",
@@ -38,7 +39,4 @@
     "opera 51",
     "safari 12"
   ]
-  
 }
-
-
