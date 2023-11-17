@@ -107,7 +107,7 @@ function Dropdown() {
             placeholder="Search For Properties ....."
           />
           <Link
-            href="properties-list"
+            href="properties-grid"
             className="btn btn-primary search-btn position-absolute top-50"
           >
             <i className="fa-solid fa-angle-right" />
