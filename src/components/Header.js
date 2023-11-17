@@ -102,8 +102,8 @@ export default function Header() {
                     <nav className="custom-navbar navbar navbar-expand-lg">
                         {/* Start Navbar Brand */}
                         <Link className="border-end navbar-brand pe-3 pe-sm-4 py-0" href="/">
-                            <img className="logo-dark" src="assets/img/logo.png" alt="" />
-                            <img className="logo-white" src="assets/img/logo-white.png" alt="" />
+                            <img className="logo-dark" src="assets/logo-sl.png" alt=""/>
+                            <img className="logo-white" src="assets/logo-white-sl.png" alt=""/>
                         </Link>
                         {/* End Navbar Brand */}
                         {/* Start Navbar Collapse */}
@@ -111,9 +111,8 @@ export default function Header() {
                             {/* Start Navbar Collapse Header */}
                             <div className="align-items-center border-bottom d-flex d-lg-none justify-content-between mb-3 navbar-collapse__header pb-3">
                                 {/* Start Brand Logo For Mobile */}
-                                <div className="collapse-brand flex-shrink-0">
-                                    <Link href="/"><img src="assets/img/logo.png" alt="" /></Link>
-
+                                <div className="collapse-brand flex-shrink-0 d-flex">
+                                    <Link href="/"><img src="assets/logo-sl.png" alt="" /></Link>
                                 </div>
                                 {/* End Brand Logo For Mobile */}
                                 {/* Start Collapse Close Button */}
@@ -129,7 +128,7 @@ export default function Header() {
                                 <li className="nav-item">
                                     <Link className="nav-link" href="/">Home</Link>
                                 </li>
-                                <li className="nav-item"><Link className="nav-link" href="properties-list">Advanced search</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="properties-grid">Advanced search</Link></li>
                                 <li className="nav-item"><Link className="nav-link" href="about">About</Link></li>
                                 <li className="nav-item"><Link className="nav-link" href="contact">Contact</Link></li>
                             </ul>

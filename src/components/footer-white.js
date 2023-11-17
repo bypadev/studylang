@@ -81,8 +81,8 @@ export default function FooterWhite() {
                         {/*  /. End Sub Footer Nav */}
                         <div className="align-items-center row mb-2">
                             {/* Start Footer Logo */}
-                            <div className="col-sm-auto footer-logo mb-3 mb-sm-0">
-                                <img className="footer-logo__dark" src="assets/img/logo.png" alt="" />
+                            <div className="col-sm-auto footer-logo mb-3 mb-sm-0 d-flex">
+                                <img className="footer-logo__dark" src="assets/logo-white-sl.png" alt="" /><p className="h4 text-white mt-2">STUDYLANDIA</p>
                             </div>
                             {/* /.End Footer Logo  */}
                             {/* Start Copy Rights Text */}
