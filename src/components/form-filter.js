@@ -49,7 +49,7 @@ function Filter() {
         }),
         option: (provided, state) => ({
             ...provided,
-            backgroundColor: state.isSelected ? '#0a73c0' : 'white', // Change the background color when an option is selected
+            backgroundColor: state.isSelected ? '#00C5D4' : 'white', // Change the background color when an option is selected
             color: state.isSelected ? 'white' : 'black', // Change the text color when an option is selected
         }),
         indicatorSeparator: (provided) => ({

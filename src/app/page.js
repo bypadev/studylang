@@ -1,12 +1,37 @@
-
+"use client"
 import Header from "@/components/Header";
 import Carousel from "@/components/corousel";
 import FeaturesProperties from "@/components/feature-properties";
 import FooterWhite from "@/components/footer-white";
 import Dropdown from "@/components/form-control-two";
+import ApiService from "@/ApiService";
 import Link from "next/link";
+import {useEffect} from "react";
 
 export default function HomeTwo() {
+  // const [universities, s etUniversities] = useState([]);
+  useEffect( () => {
+    ApiService.getUniversities({
+      "country": null,
+      "name": null,
+      "code": null,
+      "degree": null,
+      "speciality": null,
+      "program": null,
+      "language": null,
+      "period": null,
+      "city": null,
+      "feeMin": null,
+      "feeMax": null,
+      "currency": null,
+      "sortBy": "asc",
+      "freeText" : null,
+      "pageNumber": 1,
+      "pageSize": 150
+    }).then( res => {
+      console.log(res);
+    })
+  })
   return (
     <>
     <Header/>
@@ -72,112 +97,110 @@ export default function HomeTwo() {
       </div>
 
       {/* Start Articles Section */}
-      <div className="py-5">
-        <div className="container pb-5">
-          <div className="row">
-            <div className="col-md-10 offset-md-1">
-              {/* Start Section Header Title */}
-              <div className="section-header text-center mb-5" data-aos="fade-down">
-                {/* Start Subtitle */}
-                <div className="bg-soft-primary d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">
-                  Our Latest Articles
-                </div>
-                {/* /. End Subtitle */}
-                {/* Start Section Header title */}
-                <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">Browse our latest <span className="underline position-relative text-primary">articles</span> & news</h2>
-                {/* /.End Section Header Title */}
-                {/* Start Section Header Sub Title */}
-                <div className="sub-title fs-16">
-                  It is a long established fact that a reader will be distracted by
-                  the
-                  <br className="d-none d-lg-block" /> readable content of a page
-                  when looking at its layout.
-                </div>
-                {/* /.End Section Header Sub Title */}
-              </div>
-              {/*/. End Section Header */}
-            </div>
-          </div>
-         <Carousel/>
-        </div>
-      </div>
+      {/*<div className="py-5">*/}
+      {/*  <div className="container pb-5">*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-md-10 offset-md-1">*/}
+      {/*        /!* Start Section Header Title *!/*/}
+      {/*        <div className="section-header text-center mb-5" data-aos="fade-down">*/}
+      {/*          /!* Start Subtitle *!/*/}
+      {/*          <div className="bg-soft-primary d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">*/}
+      {/*            Our Latest Articles*/}
+      {/*          </div>*/}
+      {/*          /!* /. End Subtitle *!/*/}
+      {/*          /!* Start Section Header title *!/*/}
+      {/*          <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">Browse our latest <span className="underline position-relative text-primary">articles</span> & news</h2>*/}
+      {/*          /!* /.End Section Header Title *!/*/}
+      {/*          /!* Start Section Header Sub Title *!/*/}
+      {/*          <div className="sub-title fs-16">*/}
+      {/*            It is a long established fact that a reader will be distracted by*/}
+      {/*            the*/}
+      {/*            <br className="d-none d-lg-block" /> readable content of a page*/}
+      {/*            when looking at its layout.*/}
+      {/*          </div>*/}
+      {/*          /!* /.End Section Header Sub Title *!/*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*   <Carousel/>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       {/* /. End Articles Section */}
       {/* Start Newslatter */}
-      <div className="bg-primary newslatter position-relative py-5 mx-3 mx-xl-5 rounded-4 position-relative overflow-hidden">
-        <div className="container p-4 position-relative z-1">
-          <div className="row">
-            <div className="col-md-10 offset-md-1">
-              {/* Start Section Header Title */}
-              <div className="section-header text-center mb-5" data-aos="fade-down">
-                {/* Start Subtitle */}
-                <div className="bg-white d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">
-                  Our Latest Articles
-                </div>
-                {/* /. End Subtitle */}
-                {/* Start Section Header title */}
-                <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize text-white">
-                  Want to join us?
-                </h2>
-                {/* /.End Section Header Title */}
-                {/* Start Section Header Sub Title */}
-                <div className="sub-title fs-16 text-white">
+      {/*<div className="bg-primary newslatter position-relative py-5 mx-3 mx-xl-5 rounded-4 position-relative overflow-hidden">*/}
+      {/*  <div className="container p-4 position-relative z-1">*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-md-10 offset-md-1">*/}
+      {/*        /!* Start Section Header Title *!/*/}
+      {/*        <div className="section-header text-center mb-5" data-aos="fade-down">*/}
+      {/*          /!* Start Subtitle *!/*/}
+      {/*          <div className="bg-white d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">*/}
+      {/*            Our Latest Articles*/}
+      {/*          </div>*/}
+      {/*          /!* /. End Subtitle *!/*/}
+      {/*          /!* Start Section Header title *!/*/}
+      {/*          <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize text-white">*/}
+      {/*            Want to join us?*/}
+      {/*          </h2>*/}
+      {/*          /!* /.End Section Header Title *!/*/}
+      {/*          /!* Start Section Header Sub Title *!/*/}
+      {/*          <div className="sub-title fs-16 text-white">*/}
 
-                  It is a long established fact that a reader will be distracted by
-                  the
-                  <br className="d-none d-lg-block" /> readable content of a page
-                  when looking at its layout.
-                </div>
-                {/* /.End Section Header Sub Title */}
-              </div>
-              {/*/. End Section Header */}
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
-              <div className="row g-4 align-items-end newslatter-form">
-                <div className="col-sm">
-                  {/* Start Form Group */}
-                  <div className="form-group">
-                    <label className="text-white bg-primary fw-semibold">
-                      Full Name
-                    </label>
-                    <input type="text" className="form-control bg-transparent" />
-                  </div>
-                  {/* /. End Form Group */}
-                </div>
-                <div className="col-sm">
-                  {/* Start Form Group */}
-                  <div className="form-group">
-                    <label className="text-white bg-primary">Enter Email</label>
-                    <input type="email" className="form-control bg-transparent" />
-                  </div>
-                  {/* /. End Form Group */}
-                </div>
-                <div className="col-sm-auto">
-                  {/* Start Button */}
-                  <button type="button" className="btn btn-lg btn-light w-100">
-                    Join Now
-                  </button>
-                  {/* /. End Button */}
-                </div>
-              </div>
-              {/* Start Text */}
-              <small className="d-block mt-3 text-white text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni cum
-                consectetur alias laudantium dolore sunt quis similique!
-              </small>
-              {/* /. End Text */}
-            </div>
-          </div>
-        </div>
-        <div className="card-sketch">
-          <img
-            src="assets/img/png-img/house-sketch.png"
-            alt=""
-            className="card-sketch-image"
-          />
-        </div>
-      </div>
+      {/*            It is a long established fact that a reader will be distracted by*/}
+      {/*            the*/}
+      {/*            <br className="d-none d-lg-block" /> readable content of a page*/}
+      {/*            when looking at its layout.*/}
+      {/*          </div>*/}
+      {/*          /!* /.End Section Header Sub Title *!/*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="row justify-content-center">*/}
+      {/*      <div className="col-lg-10 col-xl-8">*/}
+      {/*        <div className="row g-4 align-items-end newslatter-form">*/}
+      {/*          <div className="col-sm">*/}
+      {/*            /!* Start Form Group *!/*/}
+      {/*            <div className="form-group">*/}
+      {/*              <label className="text-white bg-primary fw-semibold">*/}
+      {/*                Full Name*/}
+      {/*              </label>*/}
+      {/*              <input type="text" className="form-control bg-transparent" />*/}
+      {/*            </div>*/}
+      {/*            /!* /. End Form Group *!/*/}
+      {/*          </div>*/}
+      {/*          <div className="col-sm">*/}
+      {/*            /!* Start Form Group *!/*/}
+      {/*            <div className="form-group">*/}
+      {/*              <label className="text-white bg-primary">Enter Email</label>*/}
+      {/*              <input type="email" className="form-control bg-transparent" />*/}
+      {/*            </div>*/}
+      {/*            /!* /. End Form Group *!/*/}
+      {/*          </div>*/}
+      {/*          <div className="col-sm-auto">*/}
+      {/*            /!* Start Button *!/*/}
+      {/*            <button type="button" className="btn btn-lg btn-light w-100">*/}
+      {/*              Join Now*/}
+      {/*            </button>*/}
+      {/*            /!* /. End Button *!/*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        /!* Start Text *!/*/}
+      {/*        <small className="d-block mt-3 text-white text-center">*/}
+      {/*          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni cum*/}
+      {/*          consectetur alias laudantium dolore sunt quis similique!*/}
+      {/*        </small>*/}
+      {/*        /!* /. End Text *!/*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  <div className="card-sketch">*/}
+      {/*    <img*/}
+      {/*      src="assets/img/png-img/house-sketch.png"*/}
+      {/*      alt=""*/}
+      {/*      className="card-sketch-image"*/}
+      {/*    />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       {/* /.End Newslatter */}
       <FooterWhite/>
     </>

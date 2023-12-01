@@ -62,7 +62,7 @@ export default function StyleGrid() {
                     <div className="col-auto">
                       <div className="color-swatch">
                         <div className="bg-primary color-box rounded-3" />
-                        <p className="text-center mt-2 mb-0 text-dark">#0a73c0</p>
+                        <p className="text-center mt-2 mb-0 text-dark">#00C5D4</p>
                       </div>
                     </div>
                     <div className="col-auto">

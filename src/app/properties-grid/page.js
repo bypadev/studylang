@@ -47,8 +47,8 @@ export default function PropertyGrid() {
                   {/* Start Section Header Sub Title */}
                   <div className="sub-title fs-16">
 
-                    Lorem Ipsum is simply dummy text of
-                    <br className="d-none d-lg-block" /> the printing and typesetting industry.
+                    {/*Lorem Ipsum is simply dummy text of*/}
+                    {/*<br className="d-none d-lg-block" /> the printing and typesetting industry.*/}
                   </div>
                   {/* /.End Section Header Sub Title */}
                 </div>
