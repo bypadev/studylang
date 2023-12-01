@@ -42,7 +42,7 @@ export default function HomeTwo() {
           <img src="assets/img/png-img/section-bg.png" alt="" className="h-100 object-fit-cover position-absolute w-100 top-0"/>
         {/* Start Oblique */}
         <div className="d-md-block d-none h-100 oblique overflow-hidden position-absolute top-0">
-        <img src="assets/img/header/02.jpg" alt="" className="h-100 object-fit-cover position-absolute w-100 oblique-image top-0"/>
+        <img src="assets/img/header/02-1.jpg" alt="" className="h-100 object-fit-cover position-absolute w-100 oblique-image top-0"/>
           
         </div>
         {/* /.End Oblique */}
